@@ -1,0 +1,44 @@
+キャラクラスについてまとめる
+メンバ変数
+	キャライメージ：figure
+	下のバーのキャライメージ:bottom_img
+	キャラの座標:cha_x,cha_y
+	HP情報：hp
+	奥義:mystery(リスト、奥義名と与えるダメージ)
+	攻撃力：power
+	防御力:Defence
+	攻撃力関係の情報:P_Data_UP(リスト、updown_flag:1(up),2(down),0(nomal),
+				    scale:割合、effect_turn:効果ターン、基本攻撃力:Base_Atk)
+
+	攻撃力関係の情報:P_Data_DOWN(リスト、updown_flag:1(up),2(down),0(nomal),
+				    scale:割合、effect_turn:効果ターン、基本攻撃力:Base_Atk)
+
+	防御力関係の情報:D_Data_UP(リスト、updown_flag:1(up),2(down),0(nomal),
+				    scale:割合、effect_turn:効果ターン、基本攻撃力:Base_Def)
+
+	防御力関係の情報:D_Data_DOWN(リスト、updown_flag:1(up),2(down),0(nomal),
+				    scale:割合、effect_turn:効果ターン、基本攻撃力:Base_Def)
+
+	アビリティ:Ability(リスト、name:アビリティ名、effect:効果(効果、ターン数)、dmg:ダメージ数、turn:使用可能となるターン間隔:turn_base,後何ターンで使えるか)
+	
+メソッド
+	攻撃メソッド：Attack()
+		return power
+	ダメージメソッド：Damage(ability = None)
+		hp - enemy_dmg*defence(defが高いほどダメージ減)
+		if(ability)
+			if(ability[P_DOWN_Flag])
+			P_Data_DOWN[down_flag] = 1
+			P_Data_DOWN[scale] = 
+			P_Data_DOWN[effect_turn] =
+		if(ability[D_DOWN_Flag])
+			D_Data_DOWN[down_flag] = 1
+			D_Data_DOWN[scale] = 
+			D_Data_DOWN[effect_turn] =
+
+		return 
+	アビリティメソッド:Ability_method()
+		turn = turn_base
+		(自分のアビリティの場合に)
+		P_Data_UP[]
+		return effect, dmg	

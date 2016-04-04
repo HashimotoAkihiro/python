@@ -1,0 +1,15 @@
+キャラクラスについてまとめる
+メンバ変数
+	キャライメージ：figure
+	下のバーのキャライメージ:bottom_img
+	キャラの座標:cha_x,cha_y
+	HP情報：hp
+	奥義:mystery(リスト、奥義名と与えるダメージ)
+	攻撃力：power
+	防御力:Defence
+	攻撃力関係の情報:P_Data(リスト、updown_flag:1(up),2(down),0(nomal),
+				    scale:割合、effect_turn:効果ターン)
+
+	防御力関係の情報:P_Data(リスト、updown_flag:1(up),2(down),0(nomal),
+				    scale:割合、effect_turn:効果ターン)
+	

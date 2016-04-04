@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+#coding: utf-8
+import pygame
+from pygame.locals import *
+import sys
+#pygameでボタン操作をする場合に使用
+import pygbutton
+
+class Character:
+    #コンストラクタの定義
+    #selfは自身のクラス
+    #figure：画像ファイル名
+    #hp:HPゲージ,Power:攻撃力,Defence:防御力
+    
+    
+    def __init__(self,figure,)
